@@ -1,167 +1,353 @@
-PeerGrade 🚀
+Public Url: https://peergrade.vercel.app/
 
-Learn by teaching. Prove by grading.
 
-PeerGrade is a full-stack skill credibility platform where users don’t just claim skills — they prove them.
-The platform enables peer-to-peer learning, structured assessments, and credibility scoring to build trustworthy skill profiles for students and professionals.
+🚀 PeerGrade
 
-🧠 Problem Statement
+### Learn by Teaching. Prove by Grading.
 
-Online learning has made skills accessible, but verifying real skill level is still a challenge.
+PeerGrade is a **full-stack skill credibility platform** where users don’t just claim skills — they **prove them through teaching, assessments, and peer evaluation**.
 
-Resumes rely on self-claimed skills
+The platform enables **peer-to-peer learning, structured assessments, and credibility scoring** to build trustworthy skill profiles for students and professionals.
 
-Certificates don’t reflect actual ability
+Instead of relying on resumes or certificates alone, PeerGrade measures **real knowledge through interaction and evaluation**.
 
-Recruiters struggle to trust skill claims
+# 🌍 Vision
 
-Learners lack a way to prove what they truly know
+The goal of PeerGrade is to create a learning ecosystem where **knowledge sharing builds verified credibility**.
 
-💡 Solution
+In traditional systems:
 
-PeerGrade solves this by combining:
+* Skills are self-claimed
+* Certificates often lack practical validation
+* Recruiters struggle to evaluate real capability
 
-Learning by teaching
+PeerGrade introduces a system where **skills gain credibility through real teaching, evaluation, and learning outcomes**.
 
-Peer-based evaluations
+---
 
-Structured skill assessments
+# 🧠 Problem Statement
 
-Credibility scoring instead of claims
+Modern education platforms allow users to learn almost anything online.
 
-Users earn credibility through real interactions, not just course completion.
+However, verifying **actual skill proficiency** remains difficult.
 
-🔑 Key Features
-👥 Peer Swap Mode (Free)
+Current challenges include:
 
-Users list:
+* Resumes rely on **self-reported skills**
+* Certificates often reflect **completion rather than capability**
+* Recruiters struggle to verify real skill levels
+* Learners lack a system to **demonstrate true understanding**
 
-Skills they can teach
+As a result, the gap between **claimed skills and real ability** continues to grow.
 
-Skills they want to learn
+---
 
-Smart matching between learners and teachers
+# 💡 Solution
 
-Short interactive teaching sessions
+PeerGrade solves this problem through a **credibility-driven skill verification system** built around peer interaction.
 
-Post-session quizzes and feedback
+The platform combines:
 
-Skill credibility score updated after each session
+* Learning by teaching
+* Peer-to-peer knowledge exchange
+* Structured skill assessments
+* Credibility scoring based on performance
 
-🎓 ProGrade Mode (Mentor-based)
+Instead of simply listing skills, users **earn credibility through real interactions and evaluations**.
 
-Verified professionals offer paid mentoring
+---
 
-No skill swap required
+# 🔑 Core Features
 
-Mentor ranking based on teaching quality
+## 👥 Peer Swap Mode (Free)
 
-Professional badges for verified experts
+Peer Swap Mode allows users to exchange knowledge directly.
 
-📊 Credibility Dashboard
+Users can list:
 
-Skill-wise credibility scores
+* Skills they can teach
+* Skills they want to learn
 
-Teaching and learning history
+The platform then performs **smart matching between learners and teachers**.
 
-Performance-based trust metrics
+Workflow:
 
-Real data, no mock skill claims
+1. Users are matched based on complementary skills
+2. A short teaching session is conducted
+3. The learner completes a quiz or feedback evaluation
+4. Credibility scores are updated based on performance
 
-🏗️ Tech Stack
+This encourages **active knowledge sharing and validation**.
 
-Frontend
+---
 
-React / Next.js
+## 🎓 ProGrade Mode (Mentor Based)
 
-Tailwind CSS
+ProGrade Mode connects learners with **verified professionals**.
 
-Modern component-based UI
+Features include:
 
-Backend
+* Paid mentoring sessions
+* No skill swap requirement
+* Mentor ranking system
+* Professional verification badges
 
-Node.js
+Mentors build reputation based on **teaching quality and learner feedback**.
 
-Express.js
+---
 
-REST APIs
+## 📊 Credibility Dashboard
 
-Authentication & Database
+Each user has a **dynamic credibility profile**.
 
-Firebase Authentication
+The dashboard displays:
 
-Firebase Firestore
+* Skill-wise credibility scores
+* Teaching and learning history
+* Session performance metrics
+* Assessment outcomes
 
-Other Tools
+This creates **data-backed skill credibility instead of simple skill claims**.
 
-Git & GitHub
+---
 
-Environment-based configuration
+# 🏗 System Architecture
 
-Secure API handling
+```
+User
+  │
+  ▼
+React / Next.js Frontend
+(UI + Interaction Layer)
+  │
+  ▼
+Node.js Backend
+(REST APIs + Business Logic)
+  │
+  ▼
+Firebase
+(Authentication + Firestore Database)
+```
 
-🔐 Security & Best Practices
+The architecture ensures **scalability, real-time interaction, and secure authentication**.
 
-Secrets handled via environment variables
+---
 
-No sensitive keys committed
+# 🧩 Technology Stack
 
-Clean Git history
+## Frontend
 
-.gitignore configured properly
+* React / Next.js
+* Tailwind CSS
+* Modern component-based UI
 
-Scalable and deployment-ready structure
+---
 
-🚀 Getting Started (Local Setup)
-# Clone the repository
-git clone https://github.com/your-username/peergrade.git
+## Backend
 
-# Install frontend dependencies
+* Node.js
+* Express.js
+* REST API architecture
+
+---
+
+## Authentication & Database
+
+* Firebase Authentication
+* Firebase Firestore
+
+---
+
+## Development Tools
+
+* Git
+* GitHub
+* Environment-based configuration
+
+---
+
+# 🔐 Security & Best Practices
+
+PeerGrade follows modern development and security practices:
+
+* Sensitive data handled via **environment variables**
+* No API keys or credentials committed to repository
+* `.gitignore` configured to prevent accidental exposure
+* Clean Git history maintained
+* Modular and scalable project structure
+
+---
+
+# 🚀 Installation
+
+## 1️⃣ Clone the Repository
+
+```
+git clone https://github.com/Mahitha-Chowdary/PEERGRADE
+cd PEERGRADE
+```
+
+---
+
+## 2️⃣ Install Frontend Dependencies
+
+```
 cd frontend
 npm install
 npm run dev
+```
 
-# Install backend dependencies
+---
+
+## 3️⃣ Install Backend Dependencies
+
+```
 cd ../backend
 npm install
 npm start
+```
 
+---
 
-Make sure to add your Firebase credentials in environment variables before running.
+## 4️⃣ Environment Configuration
 
-🎯 Use Cases
+Before running the project, configure your Firebase credentials.
 
-Students proving skills beyond certificates
+Create an `.env` file and add:
 
-Peer-to-peer learning communities
+```
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_STORAGE_BUCKET=
+FIREBASE_MESSAGING_SENDER_ID=
+FIREBASE_APP_ID=
+```
 
-Skill-based hiring platforms
+---
 
-Mentorship and knowledge exchange systems
+# 🚀 Usage Workflow
 
-🌱 Future Enhancements
+### Step 1 — User Registration
 
-AI-assisted quiz generation
+Users create an account using Firebase Authentication.
 
-Advanced skill credibility algorithms
+---
 
-Employer verification dashboards
+### Step 2 — Skill Setup
 
-Skill heatmaps and analytics
+Users list:
 
-Role-based access control
+* skills they can teach
+* skills they want to learn
 
-🏆 Hackathon Value
+---
 
-Solves a real, industry-relevant problem
+### Step 3 — Peer Matching
 
-Strong focus on trust and credibility
+The system matches users with compatible learning partners.
 
-Scalable product vision
+---
 
-Practical full-stack implementation
+### Step 4 — Teaching Session
 
-📌 Team & Contribution
+A short peer-to-peer learning session takes place.
 
-Built as a collaborative hackathon project with a focus on impact, feasibility, and real-world adoption.
-"# PeerGrade" 
+---
+
+### Step 5 — Assessment & Feedback
+
+The learner completes a quiz or evaluation.
+
+---
+
+### Step 6 — Credibility Score Update
+
+Skill credibility scores update based on performance and feedback.
+
+---
+
+### Step 7 — Credibility Dashboard
+
+Users track their skill credibility and learning progress.
+
+---
+
+# 🎯 Key Advantages
+
+PeerGrade introduces several improvements over traditional learning platforms:
+
+* Skill verification through **real interactions**
+* Peer-driven learning ecosystem
+* Credibility scoring instead of self-claims
+* Structured evaluation after teaching sessions
+* Mentor-based professional learning mode
+* Transparent skill reputation system
+
+---
+
+# 📊 Use Cases
+
+PeerGrade can be applied in many real-world contexts:
+
+* Students proving skills beyond certificates
+* Peer learning communities
+* Skill-based hiring platforms
+* Professional mentorship networks
+* Knowledge exchange communities
+
+---
+
+# 🌱 Future Improvements
+
+Potential future developments include:
+
+* AI-generated quizzes based on teaching sessions
+* Advanced credibility scoring algorithms
+* Employer verification dashboards
+* Skill analytics and performance heatmaps
+* Role-based access control
+* Institutional integrations for universities
+
+---
+
+# 🏆 Hackathon Value
+
+PeerGrade demonstrates strong potential as a scalable platform.
+
+Key strengths include:
+
+* Solves a **real industry problem**
+* Focuses on **trust and skill credibility**
+* Encourages collaborative learning
+* Designed with scalable architecture
+* Practical full-stack implementation
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Steps to contribute:
+
+```
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Submit a Pull Request
+```
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 🏁 Project Vision
+
+PeerGrade aims to redefine how skills are validated in the digital era by replacing **self-claimed abilities with credibility earned through real learning and teaching interactions**.
+
+The platform promotes a future where **knowledge sharing builds trust, reputation, and verified expertise**.
